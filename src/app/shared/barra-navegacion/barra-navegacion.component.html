@@ -1,0 +1,18 @@
+<div class="navbar navbar-expand navbar-light bg-body-secondary container-fluid position-fixed z-1">
+    <div class="container">
+        <div class="tamaño_logo">
+            <a [href]="ruta_home" class="navbar-brand">
+                <img [src]="logotipo" alt="" class="img-fluid">
+            </a>
+        </div>
+        <ul class="navbar-nav gap-3">
+            <li *ngFor="let item of lista_opciones"
+            class="nav-link texto_barra_navegacion">
+            <a [href]="item.ruta" class="nav-link fw-bold">
+                {{item.nombre}}
+            </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<router-outlet></router-outlet>

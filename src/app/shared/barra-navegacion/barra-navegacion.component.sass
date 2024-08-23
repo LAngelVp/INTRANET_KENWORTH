@@ -1,0 +1,26 @@
+@import '../../../styles.sass'
+.tamaño_logo
+    display: flex
+    width: 45%
+    max-width: 300px
+
+.texto_barra_navegacion
+    position: relative
+    padding: 0 2px
+    font-size: $font-size-xs
+    cursor: pointer
+    &::before
+        content: ''
+        display: flex
+        height: 2px
+        background-color: $color-rojo
+        width: 0
+        position: absolute
+        left: 0
+        bottom: 0
+        transition: width 0.5s ease
+    &:hover::before
+        width: 100%
+    @media (min-width: 768px) 
+        font-size: $font-size-sm
+
