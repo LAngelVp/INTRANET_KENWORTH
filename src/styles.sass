@@ -1,4 +1,8 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
 @import "../node_modules/bootstrap/scss/bootstrap"
+
 /*colores*/
 $color-base: #fdf6fd
 $color-rojo: #d90429
@@ -17,3 +21,14 @@ $font-size-lg: 2rem
 $font-size-xl: 2.5rem
 
 $contenedor-fondo : $color-gris2
+
+
+.texto2 
+  font-size: $font-size-sm
+  @media (min-width: 768px) 
+    font-size: $font-size-md
+
+.subtexto
+    font-size: $font-size-xs
+    @media (min-width: 768px) 
+        font-size: $font-size-sm

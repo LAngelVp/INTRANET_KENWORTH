@@ -1,15 +1,24 @@
-<div class="">
-    <div class="contenedor5s_global">
-        <div class="position-absolute w-75 contenedor_texto">
-            <h2>
-                {{titulo}}
-            </h2>
-            <p>
-                {{descripcion}}
-            </p>
+<div class="container">
+    <div class="position-relative">
+        <div class="contenedor5s_global">
+            <div class="position-absolute w-75 contenedor_texto z-10">
+                <h2>
+                    {{titulo}}
+                </h2>
+                <p>
+                    {{descripcion}}
+                </p>
+            </div>
+            <div class="contenedor_imagen_5s w-100 d-flex justify-content-center animate-pulse z-0">
+                <img [src]="imagen_5s" alt="imagen" class="d-block img-fluid">
+            </div>
         </div>
-        <div class="contenedor_imagen_5s w-100 d-flex justify-content-center">
-            <img [src]="imagen_5s" alt="imagen" class="d-block img-fluid">
+
+        <div class=" mt-10">
+            <h2 class="text-lg">
+                {{titulo_opciones}}
+            </h2>
+            <app-lista-opciones/>
         </div>
     </div>
 </div>
