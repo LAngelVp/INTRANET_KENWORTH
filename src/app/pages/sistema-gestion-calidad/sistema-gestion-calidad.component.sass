@@ -1,0 +1,29 @@
+@import '../../../styles.sass'
+.contenedor5s_global
+    display: flex
+    position: relative
+    justify-content: center
+    align-items: center
+    min-height: 100vh
+
+.contenedor_imagen_5s
+    display: block
+
+.imagen_header
+    aspect-ratio: 6/3
+    width: 100%
+    border-radius: 50%
+    
+
+.contenedor_titulo_lista
+    position: relative
+    &::before
+        content: ''
+        display: flex
+        height: 6px
+        background-color: $color-rojo
+        width: 2rem
+        position: absolute
+        left: 0
+        bottom: -10px
+        transition: width 0.5s ease

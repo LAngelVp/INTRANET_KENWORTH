@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand navbar-light bg-body-secondary container-fluid position-fixed z-3">
+<div class="navbar navbar-expand navbar-light bg-body-secondary container-fluid position-fixed z-3 p-0">
     <div class="container">
         <div class="tamaño_logo">
             <a [href]="ruta_home" class="navbar-brand">
@@ -7,8 +7,8 @@
         </div>
         <ul class="navbar-nav gap-3">
             <li *ngFor="let item of lista_opciones"
-            class="nav-link texto_barra_navegacion">
-            <a [href]="item.ruta" class="nav-link fw-bold">
+            class="nav-link texto_barra_navegacion p-0">
+            <a [href]="item.ruta" class="nav-link fw-bold texto_slogans">
                 {{item.nombre}}
             </a>
             </li>

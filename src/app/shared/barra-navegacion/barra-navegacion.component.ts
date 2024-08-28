@@ -26,7 +26,11 @@ export class BarraNavegacionComponent {
       ruta : '/sistema-de-gestion-de-calidad'
     },
     {
-      nombre : 'TQC',
+      nombre : 'Recursos Humanos',
+      ruta : ''
+    },
+    {
+      nombre : 'Cursos',
       ruta : ''
     },
   ]
