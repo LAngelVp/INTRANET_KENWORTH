@@ -23,7 +23,7 @@ export class BarraNavegacionComponent {
     },
     {
       nombre : 'SGC',
-      ruta : ''
+      ruta : '/sistema-de-gestion-de-calidad'
     },
     {
       nombre : 'TQC',

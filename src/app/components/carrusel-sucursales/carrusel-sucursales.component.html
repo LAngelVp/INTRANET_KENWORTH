@@ -12,11 +12,11 @@
         <div *ngFor="let item of lista_sucursales; let i = index" class="carousel-item" [class.active]= "i === 0">
             <img [src]="item.imagen" class="d-block w-100 object-fit-cover item_carrusel" alt="...">
             <div class="position-absolute top-0 w-100 h-100 d-flex flex-column gap-2 justify-content-center align-items-center">
-                <div class="contenedor_texto opacity-75 text-center">
-                    <h5 class="fw-bold texto2">
+                <div class="contenedor_slogans p-5 text-center w-50 rounded rounded-3">
+                    <h5 class="fw-bold titulos display-1">
                         {{item.nombre_sucursal}}
                     </h5>
-                    <p class="subtexto">
+                    <p class="contenido texto_slogans fw-bold">
                         {{item.descripcion}}
                     </p>
                 </div>

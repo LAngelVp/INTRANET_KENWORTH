@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap')
 @tailwind base
 @tailwind components
 @tailwind utilities
@@ -10,25 +11,155 @@ $color-rojo2: #c21d03
 $color-rosa: #ff98aa
 $color-gris1: #edf2f4
 $color-gris2: #d9dee4
-$color-gris3: #bfc7d1
+$color-gris3: #bfc7d181
 $color-gris4: #232121
 
-/*letras*/
-$font-size-xs: 1rem
-$font-size-sm: 1.25rem
-$font-size-md: 1.8rem
-$font-size-lg: 2rem
-$font-size-xl: 2.5rem
+// Variables de tamaño de fuente
+$fs-titulo-xs: 2rem
+$fs-titulo-sm: 2.6rem
+$fs-titulo-md: 2.5rem
+$fs-titulo-lg: 3.5rem
+$fs-titulo-xl: 4.5rem
+$fs-titulo-xxl: 5rem
 
-$contenedor-fondo : $color-gris2
+// Tamaños de fuente para subtítulos y contenido
+$fs-subtitulo-xs: 0.875rem
+$fs-subtitulo-sm: 1rem
+$fs-subtitulo-md: 1.5rem
+$fs-subtitulo-lg: 2.3rem
+$fs-subtitulo-xl: 2.75rem
+$fs-subtitulo-xxl: 3rem
 
+$fs-slogans-xs: 1.2rem
+$fs-slogans-sm: 1.4rem
+$fs-slogans-md: 1.6 rem
+$fs-slogans-lg: 1.8 rem
+$fs-slogans-xl: 2 rem
+$fs-slogans-xxl: 2.4 rem
 
-.texto2 
-  font-size: $font-size-sm
-  @media (min-width: 768px) 
-    font-size: $font-size-md
+  
+$fs-contenidos-xs: 1rem
+$fs-contenidos-sm: 1.2rem
+$fs-contenidos-md: 1.4 rem
+$fs-contenidos-lg: 1.6 rem
+$fs-contenidos-xl: 1.8 rem
+$fs-contenidos-xxl: 2 rem
 
-.subtexto
-    font-size: $font-size-xs
-    @media (min-width: 768px) 
-        font-size: $font-size-sm
+$contenedor-fondo: $color-gris3
+
+// contenedor slogans
+.contenedor_slogans
+  background-color: $contenedor-fondo
+
+/*titulos*/
+.titulos
+  font-family: "New Amsterdam", sans-serif
+  font-weight: 800
+//*
+.subtitulos
+  font-family: "DM Serif Text", serif
+  font-weight: 400
+
+.contenido
+  font-family: "Montserrat", sans-serif
+  font-optical-sizing: auto
+
+.texto_titulos
+  // Extra pequeño (xs): <576px (no se necesita media query para xs)
+  @media (max-width: 575.98px)
+    font-size: $fs-titulo-xs
+
+  // Pequeño (sm): ≥576px
+  @media (min-width: 576px)
+    font-size: $fs-titulo-sm
+
+  // Mediano (md): ≥768px
+  @media (min-width: 768px)
+    font-size: $fs-titulo-md
+
+  // Grande (lg): ≥992px
+  @media (min-width: 992px)
+    font-size: $fs-titulo-lg
+
+  // Extra grande (xl): ≥1200px
+  @media (min-width: 1200px)
+    font-size: $fs-titulo-xl
+
+  // Extra extra grande (xxl): ≥1400px
+  @media (min-width: 1400px)
+    font-size: $fs-titulo-xxl
+
+.texto_subtitulo
+  // Extra pequeño (xs): <576px (no se necesita media query para xs)
+  @media (max-width: 575.98px)
+    font-size: $fs-subtitulo-xs
+
+  // Pequeño (sm): ≥576px
+  @media (min-width: 576px)
+    font-size: $fs-subtitulo-sm
+
+  // Mediano (md): ≥768px
+  @media (min-width: 768px)
+    font-size: $fs-subtitulo-md
+
+  // Grande (lg): ≥992px
+  @media (min-width: 992px)
+    font-size: $fs-subtitulo-lg
+
+  // Extra grande (xl): ≥1200px
+  @media (min-width: 1200px)
+    font-size: $fs-subtitulo-xl
+
+  // Extra extra grande (xxl): ≥1400px
+  @media (min-width: 1400px)
+    font-size: $fs-subtitulo-xxl
+
+.texto_slogans
+  // Extra pequeño (xs): <576px (no se necesita media query para xs)
+  @media (max-width: 575.98px)
+    font-size: $fs-slogans-xs
+
+  // Pequeño (sm): ≥576px
+  @media (min-width: 576px)
+    font-size: $fs-slogans-sm
+
+  // Mediano (md): ≥768px
+  @media (min-width: 768px)
+    font-size: $fs-slogans-md
+
+  // Grande (lg): ≥992px
+  @media (min-width: 992px)
+    font-size: $fs-slogans-lg
+
+  // Extra grande (xl): ≥1200px
+  @media (min-width: 1200px)
+    font-size: $fs-slogans-xl
+
+  // Extra extra grande (xxl): ≥1400px
+  @media (min-width: 1400px)
+    font-size: $fs-slogans-xxl
+
+.texto_contenidos
+  // Extra pequeño (xs): <576px (no se necesita media query para xs)
+  @media (max-width: 575.98px)
+    font-size: $fs-contenidos-xs
+
+  // Pequeño (sm): ≥576px
+  @media (min-width: 576px)
+    font-size: $fs-contenidos-sm
+
+  // Mediano (md): ≥768px
+  @media (min-width: 768px)
+    font-size: $fs-contenidos-md
+
+  // Grande (lg): ≥992px
+  @media (min-width: 992px)
+    font-size: $fs-contenidos-lg
+
+  // Extra grande (xl): ≥1200px
+  @media (min-width: 1200px)
+    font-size: $fs-contenidos-xl
+
+  // Extra extra grande (xxl): ≥1400px
+  @media (min-width: 1400px)
+    font-size: $fs-contenidos-xxl

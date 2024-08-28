@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { ListaOpcionesComponent } from "../../components/lista-opciones/lista-opciones.component";
+import { UpperCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-metodologia5s',
   standalone: true,
   imports: [
-    ListaOpcionesComponent
+    ListaOpcionesComponent,
+    UpperCasePipe
   ],
   templateUrl: './metodologia5s.component.html',
   styleUrl: './metodologia5s.component.sass'

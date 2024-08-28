@@ -3,11 +3,14 @@
     display: flex
     width: 45%
     max-width: 300px
+    @media (min-width: 768px) 
+        width: 40%
+    
 
 .texto_barra_navegacion
     position: relative
     padding: 0 2px
-    font-size: $font-size-xs
+    font-size: $fs-subtitulo-sm
     cursor: pointer
     &::before
         content: ''
@@ -22,5 +25,5 @@
     &:hover::before
         width: 100%
     @media (min-width: 768px) 
-        font-size: $font-size-sm
+        font-size: $fs-subtitulo-md
 
