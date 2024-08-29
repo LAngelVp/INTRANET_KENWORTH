@@ -1,5 +1,12 @@
 import { CommonModule, TitleCasePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormatosDocumentos5sModel } from '../../models/formatos-documentos5s-model';
+import { Observable, of } from 'rxjs';
+import { Documentos5sService } from '../../servicios/documentos5s.service';
+import { PlantillasFormatosModel } from '../../models/plantillas-formatos-model';
+import { PlantillasEtiquetasService } from '../../servicios/plantillas-etiquetas.service';
+import { ResultadosEvaluacionesModel } from '../../models/resultados-evaluaciones-model';
+import { ResultadosEvaluaciones5sService } from '../../servicios/resultados-evaluaciones5s.service';
 
 @Component({
   selector: 'app-lista-opciones',
@@ -11,7 +18,31 @@ import { Component } from '@angular/core';
   templateUrl: './lista-opciones.component.html',
   styleUrl: './lista-opciones.component.sass'
 })
-export class ListaOpcionesComponent {
+export class ListaOpcionesComponent implements OnInit {
+
+  documentos: FormatosDocumentos5sModel[] = [];
+  plantillas: PlantillasFormatosModel[] = [];
+  resultados_evaluaciones5s : ResultadosEvaluacionesModel[] = [];
+  selectedItem: any; // Variable para almacenar el item seleccionado
+
+  constructor(
+    private documentos5s: Documentos5sService, 
+    private plantillas5s : PlantillasEtiquetasService,
+    private resultadosEvaluaciones5s : ResultadosEvaluaciones5sService
+  ){}
+
+  ngOnInit(): void {
+    this.documentos5s.getdocumentos().subscribe(data => {
+      this.documentos = data;
+    });
+    this.plantillas5s.mostrarPlantillas().subscribe(data_plantillas => {
+      this.plantillas = data_plantillas;
+    });
+    this.resultadosEvaluaciones5s.mostrarResultados().subscribe(dataResultados5s => {
+      this.resultados_evaluaciones5s = dataResultados5s;
+    });
+  }
+  
   lista_5s = [
     {
       id : 1,
@@ -28,7 +59,7 @@ export class ListaOpcionesComponent {
     },
     {
       id : 3,
-      nombre : 'Formatos para etiquetas, plantillas para diapositivas y membretes oficiales',
+      nombre : 'Plantillas para etiquetas, diapositivas y membretes oficiales',
       detalles: { detalle1: 'Detalle 1', detalle2: 'Detalle 2' }
     },
     {
@@ -58,7 +89,9 @@ export class ListaOpcionesComponent {
     },
   ]
 
-  selectedItem: any; // Variable para almacenar el item seleccionado
+
+
+  
 
   // Método para seleccionar el item y abrir el modal
   openModal(item: any) {
@@ -67,4 +100,8 @@ export class ListaOpcionesComponent {
   getObjectKeys(obj: any): string[] {
     return Object.keys(obj);
   }
+
+  
+
+
 }

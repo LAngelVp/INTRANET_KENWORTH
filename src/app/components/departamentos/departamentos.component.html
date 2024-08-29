@@ -32,7 +32,7 @@
                         <div *ngFor="let key of getObjectKeys(selectedItem.detalles); let i = index" class="mb-3">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" [id]="'flush-heading' + i">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    <button class="accordion-button collapsed py-1 px-2" type="button" data-bs-toggle="collapse"
                                         [attr.data-bs-target]="'#flush-collapse' + i" aria-expanded="false"
                                         [attr.aria-controls]="'flush-collapse' + i">
                                         <p><strong>{{key}}:</strong></p>

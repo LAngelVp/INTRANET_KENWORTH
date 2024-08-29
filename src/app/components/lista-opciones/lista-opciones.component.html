@@ -26,9 +26,87 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div *ngIf="selectedItem?.detalles">
+                <div *ngIf="selectedItem?.nombre.includes('Formatos')">
+                    <h6>Documentos:</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sucursal</th>
+                                <th scope="col">Departamento</th>
+                                <th scope="col">Mes</th>
+                                <th scope="col">Año</th>
+                                <th scope="col">Formato</th>
+                                <th scope="col">Documento</th>
+                            </tr>
+                        </thead>
+                        <tbody class=" table-group-divider">
+                            <tr *ngFor="let doc of documentos">
+                                <td>{{ doc.sucursal }}</td>
+                                <td>{{ doc.departamento }}</td>
+                                <td>{{ doc.mes }}</td>
+                                <td>{{ doc.year }}</td>
+                                <td>{{ doc.nombre_formato }}</td>
+                                <td><a [href]="doc.documento" target="_blank">{{ doc.documento }}</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div *ngIf="selectedItem?.nombre.includes('Plantillas para etiquetas')">
+                    <h6>Documentos:</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Sucursal</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Uso</th>
+                                <th scope="col">Documento</th>
+                            </tr>
+                        </thead>
+                        <tbody class=" table-group-divider">
+                            <tr *ngFor="let doc of plantillas">
+                                <td>{{ doc.nombre }}</td>
+                                <td>{{ doc.sucursal }}</td>
+                                <td>{{ doc.descripcion }}</td>
+                                <td>{{ doc.tipo }}</td>
+                                <td>{{ doc.uso }}</td>
+                                <td><a [href]="doc.documento" target="_blank">{{ doc.documento }}</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div *ngIf="selectedItem?.nombre.includes('resultados')">
+                    <h6>Documentos:</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sucursal</th>
+                                <th scope="col">Departamento</th>
+                                <th scope="col">Inicial</th>
+                                <th scope="col">Fin</th>
+                                <th scope="col">Año</th>
+                                <th scope="col">Documento</th>
+                            </tr>
+                        </thead>
+                        <tbody class=" table-group-divider">
+                            <tr *ngFor="let doc of resultados_evaluaciones5s">
+                                <td>{{ doc.sucursal }}</td>
+                                <td>{{ doc.departamento }}</td>
+                                <td>{{ doc.mes_inicio }}</td>
+                                <td>{{ doc.mes_final }}</td>
+                                <td>{{ doc.year }}</td>
+                                <td><a [href]="doc.documento" target="_blank">{{ doc.documento }}</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div *ngIf="selectedItem && !selectedItem.nombre.includes('Formatos') && 
+                            !selectedItem.nombre.includes('Plantillas')
+                            && !selectedItem?.nombre.includes('resultados')">
+                    <h6>Detalles Adicionales:</h6>
                     <div *ngFor="let key of getObjectKeys(selectedItem.detalles)">
-                        <p><strong>{{key}}:</strong> {{selectedItem.detalles[key]}}</p>
+                        <p><strong>{{ key }}:</strong> {{ selectedItem.detalles[key] }}</p>
                     </div>
                 </div>
             </div>

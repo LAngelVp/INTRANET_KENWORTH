@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { JsonPlaceholderService, Photo } from '../../servicios/json-placeholder.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartamentosSGCModels } from '../../models/departamentos-sgcmodels';
