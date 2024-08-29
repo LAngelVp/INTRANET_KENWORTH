@@ -1,35 +1,35 @@
 // Define la estructura para cada tipo de detalle
 interface DescripcionPuestoDetalle {
-    descripcion_puesto: string;
+    detalle_descripcion_puesto: string;
     documento_descripcion_puesto: string;
 }
 interface ProcedimientoDetalle {
-    descripcion_procedimiento: string;
+    detalle_descripcion_procedimiento: string;
     documento_procedimiento: string;
 }
 interface PoliticasDetalle {
-descripcion_politicas: string;
-documento_politicas: string;
+    detalle_descripcion_politicas: string;
+    documento_politicas: string;
 }
 
 interface GuiaDetalle {
-descripcion_guias: string;
-documento_guias: string;
+    detalle_descripcion_guias: string;
+    documento_guias: string;
 }
 
 interface FormatoDetalle {
-descripcion_formatos: string;
-documento_formatos: string;
+    detalle_descripcion_formatos: string;
+    documento_formatos: string;
 }
 
 interface AnexoDetalle {
-descripcion_anexos: string;
-documento_anexos: string;
+    detalle_descripcion_anexos: string;
+    documento_anexos: string;
 }
 
 interface DiagramaDetalle {
-descripcion_diagramas: string;
-documento_diagramas: string;
+    detalle_descripcion_diagramas: string;
+    documento_diagramas: string;
 }
 
 // Define la estructura general para los detalles

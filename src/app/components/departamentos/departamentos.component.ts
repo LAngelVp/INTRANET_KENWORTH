@@ -28,59 +28,59 @@ export class DepartamentosComponent{
         "organigrama": "URL_o_descripción_del_organigrama",
         "descripcion_puesto": {
           "nombre_descripcion_puesto_1": {
-            "descripcion_puesto": "Descripción del puesto 1",
-            "documento_descripcion_puesto": "documento_puesto_1.pdf"
+            "detalle_descripcion_puesto": "er since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "documento_descripcion_puesto": "../../assets/909953614757-10239940959-ticket.pdf"
           },
           "nombre_descripcion_puesto_2": {
-            "descripcion_puesto": "Descripción del puesto 2",
+            "detalle_descripcion_puesto": "Descripción del puesto 2",
             "documento_descripcion_puesto": "documento_puesto_2.pdf"
           }
         },
         "procedimientos": {
           "nombre_procedimiento_1": {
-            "descripcion_procedimiento": "Descripción del procedimiento 1",
+            "detalle_descripcion_procedimiento": "Descripción del procedimiento 1",
             "documento_procedimiento": "documento_procedimiento_1.pdf"
           },
           "nombre_procedimiento_2": {
-            "descripcion_procedimiento": "Descripción del procedimiento 2",
+            "detalle_descripcion_procedimiento": "Descripción del procedimiento 2",
             "documento_procedimiento": "documento_procedimiento_2.pdf"
           }
         },
         "politicas": {
           "nombre_politica_1": {
-            "descripcion_politicas": "Descripción de la política 1",
+            "detalle_descripcion_politicas": "Descripción de la política 1",
             "documento_politicas": "documento_politica_1.pdf"
           },
           "nombre_politica_2": {
-            "descripcion_politicas": "Descripción de la política 2",
+            "detalle_descripcion_politicas": "Descripción de la política 2",
             "documento_politicas": "documento_politica_2.pdf"
           }
         },
         "guias": {
           "nombre_guia_1": {
-            "descripcion_guias": "Descripción de la guía 1",
+            "detalle_descripcion_guias": "Descripción de la guía 1",
             "documento_guias": "documento_guia_1.pdf"
           },
           "nombre_guia_2": {
-            "descripcion_guias": "Descripción de la guía 2",
+            "detalle_descripcion_guias": "Descripción de la guía 2",
             "documento_guias": "documento_guia_2.pdf"
           }
         },
         "formatos": {
           "nombre_formato_1": {
-            "descripcion_formatos": "Descripción del formato 1",
+            "detalle_descripcion_formatos": "Descripción del formato 1",
             "documento_formatos": "documento_formato_1.pdf"
           }
         },
         "anexos": {
           "nombre_anexo_1": {
-            "descripcion_anexos": "Descripción del anexo 1",
+            "detalle_descripcion_anexos": "Descripción del anexo 1",
             "documento_anexos": "documento_anexo_1.pdf"
           }
         },
         "diagramas": {
           "nombre_diagrama_1": {
-            "descripcion_diagramas": "Descripción del diagrama 1",
+            "detalle_descripcion_diagramas": "Descripción del diagrama 1",
             "documento_diagramas": "documento_diagrama_1.pdf"
           }
         }

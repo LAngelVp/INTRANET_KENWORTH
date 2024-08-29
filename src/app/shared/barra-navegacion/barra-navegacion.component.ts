@@ -34,4 +34,8 @@ export class BarraNavegacionComponent {
       ruta : ''
     },
   ]
+  menu_abierto = false;
+  mostrar_menu(){
+    this.menu_abierto = !this.menu_abierto;
+  }
 }

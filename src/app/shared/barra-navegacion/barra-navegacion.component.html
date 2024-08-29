@@ -1,18 +1,22 @@
-<div class="navbar navbar-expand navbar-light bg-body-secondary container-fluid position-fixed z-3 p-0">
-    <div class="container">
+<div class="navbar navbar-expand-lg navbar-light bg-body-secondary container-fluid position-fixed z-3 p-0">
+    <div class="container py-2">
         <div class="tamaño_logo">
             <a [href]="ruta_home" class="navbar-brand">
                 <img [src]="logotipo" alt="" class="img-fluid">
             </a>
         </div>
-        <ul class="navbar-nav gap-3">
-            <li *ngFor="let item of lista_opciones"
-            class="nav-link texto_barra_navegacion p-0">
-            <a [href]="item.ruta" class="nav-link fw-bold texto_slogans">
-                {{item.nombre}}
-            </a>
-            </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="navbar-nav opciones_navbar" [ngClass]="{'show': menu_abierto}">
+                <li *ngFor="let item of lista_opciones" class="nav-link texto_barra_navegacion p-0">
+                    <a [href]="item.ruta" class="nav-link fw-bold texto_slogans text-center">
+                        {{item.nombre}}
+                    </a>
+                </li>
+            </ul>
+        </nav>
         
     </div>
 </div>
