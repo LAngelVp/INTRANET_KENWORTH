@@ -10,7 +10,7 @@
             </span>
         </button>
         <nav class="collapse navbar-collapse justify-content-end" id="navbarText">
-            <ul class="navbar-nav opciones_navbar" [ngClass]="{'show': menu_abierto}">
+            <ul class="navbar-nav opciones_navbar mt-0" [ngClass]="{'show': menu_abierto}">
                 <li *ngFor="let item of lista_opciones" class="nav-link texto_barra_navegacion p-0">
                     <a [href]="item.ruta" class="nav-link fw-bold texto_slogans text-center">
                         {{item.nombre}}
