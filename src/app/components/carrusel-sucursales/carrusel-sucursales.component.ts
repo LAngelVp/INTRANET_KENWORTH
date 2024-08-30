@@ -15,7 +15,7 @@ export class CarruselSucursalesComponent {
     {
       nombre_sucursal : 'Kenworth Matriz',
       descripcion : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
-      imagen : '../../assets/Images/MATRIZ-01.JPG',
+      imagen : '../../assets/Images/MATRIZ-01.jpg',
       ruta : ''
     },
     {
