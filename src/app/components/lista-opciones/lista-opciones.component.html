@@ -27,7 +27,6 @@
             </div>
             <div class="modal-body">
                 <div *ngIf="selectedItem?.nombre.includes('Formatos')">
-                    <h6>Documentos:</h6>
                     <table class="table">
                         <thead>
                             <tr>
@@ -52,7 +51,6 @@
                     </table>
                 </div>
                 <div *ngIf="selectedItem?.nombre.includes('Plantillas para etiquetas')">
-                    <h6>Documentos:</h6>
                     <table class="table">
                         <thead>
                             <tr>
@@ -77,7 +75,6 @@
                     </table>
                 </div>
                 <div *ngIf="selectedItem?.nombre.includes('resultados')">
-                    <h6>Documentos:</h6>
                     <table class="table">
                         <thead>
                             <tr>
@@ -101,10 +98,19 @@
                         </tbody>
                     </table>
                 </div>
+                <div *ngIf="selectedItem?.nombre.includes('plantillas oficiales') 
+                            || selectedItem?.nombre.includes('fondos')">
+                    <div  class="max-w-full d-flex flex-wrap gap-5 mx-auto justify-content-center">
+                        <div *ngFor="let item of plantillas_imagenes" class="">
+                            <img [src]="item.documento" alt="imagen" class="d-block img_plantilla">
+                        </div>
+                    </div>
+                </div>
                 <div *ngIf="selectedItem && !selectedItem.nombre.includes('Formatos') && 
                             !selectedItem.nombre.includes('Plantillas')
-                            && !selectedItem?.nombre.includes('resultados')">
-                    <h6>Detalles Adicionales:</h6>
+                            && !selectedItem?.nombre.includes('resultados')
+                            && !selectedItem?.nombre.includes('plantillas oficiales')
+                            && !selectedItem?.nombre.includes('fondos de pantalla')">
                     <div *ngFor="let key of getObjectKeys(selectedItem.detalles)">
                         <p><strong>{{ key }}:</strong> {{ selectedItem.detalles[key] }}</p>
                     </div>

@@ -7,6 +7,7 @@ import { PlantillasFormatosModel } from '../../models/plantillas-formatos-model'
 import { PlantillasEtiquetasService } from '../../servicios/plantillas-etiquetas.service';
 import { ResultadosEvaluacionesModel } from '../../models/resultados-evaluaciones-model';
 import { ResultadosEvaluaciones5sService } from '../../servicios/resultados-evaluaciones5s.service';
+import { PlantillasImagenesService } from '../../servicios/plantillas-imagenes.service';
 
 @Component({
   selector: 'app-lista-opciones',
@@ -23,16 +24,18 @@ export class ListaOpcionesComponent implements OnInit {
   documentos: FormatosDocumentos5sModel[] = [];
   plantillas: PlantillasFormatosModel[] = [];
   resultados_evaluaciones5s : ResultadosEvaluacionesModel[] = [];
+  plantillas_imagenes : any[] = [];
   selectedItem: any; // Variable para almacenar el item seleccionado
 
   constructor(
     private documentos5s: Documentos5sService, 
     private plantillas5s : PlantillasEtiquetasService,
-    private resultadosEvaluaciones5s : ResultadosEvaluaciones5sService
+    private resultadosEvaluaciones5s : ResultadosEvaluaciones5sService,
+    private plantillasImagenes : PlantillasImagenesService
   ){}
 
   ngOnInit(): void {
-    this.documentos5s.getdocumentos().subscribe(data => {
+    this.documentos5s.getdocumentos().subscribe(data =>  {
       this.documentos = data;
     });
     this.plantillas5s.mostrarPlantillas().subscribe(data_plantillas => {
@@ -40,6 +43,9 @@ export class ListaOpcionesComponent implements OnInit {
     });
     this.resultadosEvaluaciones5s.mostrarResultados().subscribe(dataResultados5s => {
       this.resultados_evaluaciones5s = dataResultados5s;
+    });
+    this.plantillasImagenes.mostrar_imagenes().subscribe(resultadoPlantillasImagenes => {
+      this.plantillas_imagenes = resultadoPlantillasImagenes;
     });
   }
   
@@ -64,7 +70,7 @@ export class ListaOpcionesComponent implements OnInit {
     },
     {
       id : 4,
-      nombre : 'Plantillas oficiales en imagenes',
+      nombre : 'plantillas oficiales en imagenes',
       detalles: { detalle1: 'Detalle 1', detalle2: 'Detalle 2' }
     },
     {
