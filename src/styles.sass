@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap')
-@tailwind base
-@tailwind components
-@tailwind utilities
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap')
 @import "../node_modules/bootstrap/scss/bootstrap"
 
 /*colores*/
@@ -53,16 +52,26 @@ $contenedor-fondo: $color-gris3
 
 /*titulos*/
 .titulos
-  font-family: "New Amsterdam", sans-serif
-  font-weight: 800
+  font-family: "Oswald", sans-serif
+  font-optical-sizing: auto
+  font-weight: 600
+  font-style: normal
 //*
-.subtitulos
-  font-family: "DM Serif Text", serif
+.slogans
+  font-family: "Quicksand", sans-serif
+  font-optical-sizing: auto
   font-weight: 400
+  font-style: normal
+.subtitulos
+  font-family: "Oswald", sans-serif
+  font-optical-sizing: auto
+  font-weight: 400
+  font-style: normal
 
 .contenido
-  font-family: "Montserrat", sans-serif
+  font-family: "Lora", serif
   font-optical-sizing: auto
+  font-style: normal
 
 .texto_titulos
   // Extra pequeño (xs): <576px (no se necesita media query para xs)
