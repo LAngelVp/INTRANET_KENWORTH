@@ -35,7 +35,7 @@
                                     <button class="accordion-button collapsed py-1 px-2" type="button" data-bs-toggle="collapse"
                                         [attr.data-bs-target]="'#flush-collapse' + i" aria-expanded="false"
                                         [attr.aria-controls]="'flush-collapse' + i">
-                                        <p><strong>{{key}}:</strong></p>
+                                        <p class="contenido my-2">{{key | uppercase | removerGuionBajo}}</p>
                                     </button>
                                 </h2>
                                 <div [id]="'flush-collapse' + i" class="accordion-collapse collapse"
@@ -46,7 +46,7 @@
                                             <div *ngFor="let subKey of getObjectKeys(selectedItem.detalles[key])"
                                                 class="d-lg-flex justify-content-between gap-4 mb-2 pb-2 border-bottom w-100">
                                                 <!-- nombre del documento -->
-                                                <p class=""><strong>{{subKey}}:</strong></p>
+                                                <p class=""><strong>{{subKey |removerGuionBajo}}:</strong></p>
                                                 <!-- contenido de los apartados -->
                                                 <ng-container *ngIf="isObject(selectedItem.detalles[key][subKey])" >
                                                     <!-- descripcion y ruta del documento -->

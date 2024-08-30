@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
@@ -27,13 +27,27 @@ export class BarraNavegacionComponent {
     },
     {
       nombre : 'Recursos Humanos',
-      ruta : ''
+      ruta : '/recursos-humanos'
     },
     {
       nombre : 'Cursos',
-      ruta : ''
+      ruta : '/cursos-y-asesorias'
     },
   ]
+
+  @ViewChild('color_scroll') div!: ElementRef;
+
+  @HostListener('window:scroll', ['$event'])
+  scroll_window(){
+    if (window.scrollY > 50) { // Ajusta el valor según tus necesidades
+      this.div.nativeElement.classList.add('color_barra_scroll');
+    } else {
+      this.div.nativeElement.classList.remove('color_barra_scroll');
+    }
+  }
+
+
+
   menu_abierto = false;
   mostrar_menu(){
     this.menu_abierto = !this.menu_abierto;

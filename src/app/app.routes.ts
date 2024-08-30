@@ -3,6 +3,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { Metodologia5sComponent } from './pages/metodologia5s/metodologia5s.component';
 import { SistemaGestionCalidadComponent } from './pages/sistema-gestion-calidad/sistema-gestion-calidad.component';
 import { DepartamentosComponent } from './components/departamentos/departamentos.component';
+import { RecursosHumanosComponent } from './pages/recursos-humanos/recursos-humanos.component';
+import { CursosAsesoriasComponent } from './pages/cursos-asesorias/cursos-asesorias.component';
 
 export const routes: Routes = [
     {
@@ -18,7 +20,11 @@ export const routes: Routes = [
         component: SistemaGestionCalidadComponent
     },
     {
-        path: 'fotos',
-        component: DepartamentosComponent
+        path: 'recursos-humanos',
+        component: RecursosHumanosComponent
+    },
+    {
+        path: 'cursos-y-asesorias',
+        component: CursosAsesoriasComponent
     },
 ];

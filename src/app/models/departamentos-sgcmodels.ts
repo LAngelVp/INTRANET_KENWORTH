@@ -35,7 +35,7 @@ interface DiagramaDetalle {
 // Define la estructura general para los detalles
 interface Detalles {
     organigrama: string;
-    descripcion_puesto: {
+    descripcion_de_puesto: {
         [nombre_descripcion_puesto: string]: DescripcionPuestoDetalle;
 };
     procedimientos: {
