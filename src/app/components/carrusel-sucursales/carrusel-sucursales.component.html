@@ -14,11 +14,9 @@
             <div class="position-absolute top-0 w-100 h-100 d-flex flex-column gap-2 justify-content-center align-items-center">
                 <div class="contenedor_slogans p-5 text-center w-75 rounded rounded-3">
                     <div>
-                        <div *ngIf="item.foto; else nofoto">
+                        <div *ngIf="item.foto">
                             <img [src]="item.foto" alt="foto" class="img-fluid w-25">
                         </div>
-                        <ng-template #noFoto>
-                        </ng-template>
                         <h5 class="fw-bold titulos display-1">
                             {{item.nombre}}
                         </h5>
