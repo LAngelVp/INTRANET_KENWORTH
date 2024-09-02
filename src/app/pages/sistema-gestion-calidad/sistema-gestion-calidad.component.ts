@@ -15,6 +15,6 @@ import { DepartamentosComponent } from '../../components/departamentos/departame
 export class SistemaGestionCalidadComponent {
   titulo: string = 'Sistema de gestión de calidad';
   descripcion : string = 'Explora nuestro apartado de gestión de calidad: organigramas, descripciones de puestos, procedimientos, guías y políticas para optimizar tu empresa. Todo lo necesario para una gestión efectiva y una calidad sin igual';
-  imagen_5s : string = '../../assets/Images/SGC.png'
+  imagen_5s : string = '../../assets/Images/SGC.jpg'
   titulo_opciones : string = 'Departamentos'
 }
