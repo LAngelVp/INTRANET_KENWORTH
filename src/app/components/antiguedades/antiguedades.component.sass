@@ -1,0 +1,15 @@
+@import '../../../styles.sass'
+/* Asegura que el contenedor del carrusel tenga una altura definida */
+.carousel-inner 
+    display: flex
+    height: 300px
+
+
+/* Ajusta las imágenes del carrusel para que se adapten al tamaño del contenedor */
+.carousel-item
+    min-height: 100%
+.carousel-item img
+    display: flex
+    width: 100%
+    height: 100%
+    object-fit: cover

@@ -1,1 +1,14 @@
-<app-carrusel-sucursales [lista]="lista_cumple"/>
+<div>
+    <div>
+        <app-carrusel-sucursales [lista]="lista_cumple"/>
+    </div>
+    <div class="mt-5 contenedor_bg py-5">
+        <app-antiguedades/>
+    </div>
+    <div class="mt-5 container">
+        <h2 class="mb-3 subtitulos texto_subtitulo">
+            Compañeros
+        </h2>
+        <app-tabla-contenido [lista_empleados]="lista_empleados"/>
+    </div>
+</div>
