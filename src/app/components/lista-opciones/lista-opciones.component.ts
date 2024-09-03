@@ -77,22 +77,7 @@ export class ListaOpcionesComponent implements OnInit {
       id : 5,
       nombre : 'fondos de pantalla',
       detalles: { detalle1: 'Detalle 1', detalle2: 'Detalle 2' }
-    },
-    // {
-    //   id : 6,
-    //   nombre : 'Normas y reglas de las 5s',
-    //   detalles: { detalle1: 'Detalle 1', detalle2: 'Detalle 2' }
-    // },
-    // {
-    //   id : 7,
-    //   nombre : 'Actividades y dinamicas 5s',
-    //   detalles: { detalle1: 'Detalle 1', detalle2: 'Detalle 2' }
-    // },
-    // {
-    //   id : 8,
-    //   nombre : 'Padrinos de area',
-    //   detalles: { detalle1: 'Detalle 1', detalle2: 'Detalle 2' }
-    // },
+    }
   ]
 
 

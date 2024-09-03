@@ -1,1 +1,45 @@
-<p>cursos-asesorias works!</p>
+<div class="container-fluid contenedor">
+    <div class="d-flex flex-column gap-4">
+        <h2 class="subtitulos texto_subtitulo fw-bold m-0">
+            Listado de cursos
+        </h2>
+        <div *ngFor="let curso of lista_cursos" class="container d-flex flex-column flex-md-row gap-4 border-top border-bottom py-4 border-danger contenedor_video">
+            <div class="col">
+                <video class="video" [src]="curso.link_video" (click)="abrirModal(curso)" data-bs-toggle="modal"
+                    data-bs-target="#videoModal"></video>
+            </div>
+            <div class="col d-flex flex-column gap-lg-3">
+                <h3 class="slogans fw-bold">
+                    {{curso.nombre}}
+                </h3>
+                <cite class="fw-bold text-muted contenedor_slogans rounded rounded-5 px-2 text-end">
+                    Fecha: {{curso.fecha}}
+                </cite>
+                <p class="contenido texto_contenido">
+                    {{curso.descripcion}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class=" modal-header">
+                <h3 class="m-0 p-0 slogans texto_slogans">
+                    {{video?.nombre}}
+                </h3>
+            </div>
+            <div class="modal-body">
+                <video id="modalVideo" [src]="video?.link_video" class="w-100" controls></video>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
