@@ -7,13 +7,14 @@ import { Observable, of } from 'rxjs';
 })
 export class EmpleadosService {
 
-  lista_empleados : EmpleadosModel[] = [
+  lista_empleados: EmpleadosModel[] = [
     {
       id: "1",
       nombre: "Juan Pérez",
       departamento: "Recursos Humanos",
       puesto: "Contratación",
       extension: "101",
+      mail: "juan.perez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -22,6 +23,7 @@ export class EmpleadosService {
       departamento: "Tecnología",
       puesto: "Desarrollo",
       extension: "102",
+      mail: "maria.garcia@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -30,6 +32,7 @@ export class EmpleadosService {
       departamento: "Finanzas",
       puesto: "Contabilidad",
       extension: "103",
+      mail: "carlos.ramirez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -38,6 +41,7 @@ export class EmpleadosService {
       departamento: "Marketing",
       puesto: "Publicidad",
       extension: "104",
+      mail: "luisa.fernandez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -46,6 +50,7 @@ export class EmpleadosService {
       departamento: "Ventas",
       puesto: "Relaciones Comerciales",
       extension: "105",
+      mail: "ana.martinez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -54,6 +59,7 @@ export class EmpleadosService {
       departamento: "Operaciones",
       puesto: "Logística",
       extension: "106",
+      mail: "pedro.gomez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -62,6 +68,7 @@ export class EmpleadosService {
       departamento: "Recursos Humanos",
       puesto: "Capacitación",
       extension: "107",
+      mail: "laura.sanchez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -70,6 +77,7 @@ export class EmpleadosService {
       departamento: "Tecnología",
       puesto: "Soporte Técnico",
       extension: "108",
+      mail: "roberto.torres@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -78,6 +86,7 @@ export class EmpleadosService {
       departamento: "Finanzas",
       puesto: "Auditoría",
       extension: "109",
+      mail: "elena.morales@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -86,6 +95,7 @@ export class EmpleadosService {
       departamento: "Marketing",
       puesto: "Investigación de Mercado",
       extension: "110",
+      mail: "miguel.diaz@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -94,6 +104,7 @@ export class EmpleadosService {
       departamento: "Ventas",
       puesto: "Atención al Cliente",
       extension: "111",
+      mail: "carmen.lopez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -102,6 +113,7 @@ export class EmpleadosService {
       departamento: "Operaciones",
       puesto: "Control de Calidad",
       extension: "112",
+      mail: "andres.perez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -110,6 +122,7 @@ export class EmpleadosService {
       departamento: "Recursos Humanos",
       puesto: "Desarrollo Organizacional",
       extension: "113",
+      mail: "patricia.romero@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -118,6 +131,7 @@ export class EmpleadosService {
       departamento: "Tecnología",
       puesto: "Administración de Bases de Datos",
       extension: "114",
+      mail: "sergio.vazquez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -126,6 +140,7 @@ export class EmpleadosService {
       departamento: "Finanzas",
       puesto: "Tesorería",
       extension: "115",
+      mail: "veronica.ruiz@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -134,6 +149,7 @@ export class EmpleadosService {
       departamento: "Marketing",
       puesto: "Comunicación Corporativa",
       extension: "116",
+      mail: "raul.navarro@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -142,6 +158,7 @@ export class EmpleadosService {
       departamento: "Ventas",
       puesto: "Gerente de Cuentas",
       extension: "117",
+      mail: "gloria.jimenez@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -150,6 +167,7 @@ export class EmpleadosService {
       departamento: "Operaciones",
       puesto: "Planificación",
       extension: "118",
+      mail: "emilio.castro@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -158,6 +176,7 @@ export class EmpleadosService {
       departamento: "Recursos Humanos",
       puesto: "Relaciones Laborales",
       extension: "119",
+      mail: "claudia.herrera@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
@@ -166,9 +185,11 @@ export class EmpleadosService {
       departamento: "Tecnología",
       puesto: "Seguridad Informática",
       extension: "120",
+      mail: "jorge.ortiz@example.com",
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     }
-  ]
+];
+
 
   obtener_empleados():Observable<EmpleadosModel[]>{
     return of(this.lista_empleados);

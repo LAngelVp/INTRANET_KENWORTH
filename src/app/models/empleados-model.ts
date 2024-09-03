@@ -4,5 +4,6 @@ export interface EmpleadosModel {
     departamento: string;
     puesto: string;
     extension: string;
+    mail: string;
     foto: string;
 }
