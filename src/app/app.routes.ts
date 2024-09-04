@@ -5,6 +5,7 @@ import { SistemaGestionCalidadComponent } from './pages/sistema-gestion-calidad/
 import { DepartamentosComponent } from './components/departamentos/departamentos.component';
 import { RecursosHumanosComponent } from './pages/recursos-humanos/recursos-humanos.component';
 import { CursosAsesoriasComponent } from './pages/cursos-asesorias/cursos-asesorias.component';
+import { NotFoundComponent } from './shared/not-found/not-found.component';
 
 export const routes: Routes = [
     {
@@ -27,4 +28,8 @@ export const routes: Routes = [
         path: 'cursos-y-asesorias',
         component: CursosAsesoriasComponent
     },
+    {
+        path: '**',
+        component: NotFoundComponent
+    }
 ];

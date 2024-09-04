@@ -1,4 +1,8 @@
 // Define la estructura para cada tipo de detalle
+interface DescripcionOrganigrama {
+    detalle_descripcion_organigrama: string;
+    documento_organigrama: string;
+}
 interface DescripcionPuestoDetalle {
     detalle_descripcion_puesto: string;
     documento_descripcion_puesto: string;
@@ -34,7 +38,9 @@ interface DiagramaDetalle {
 
 // Define la estructura general para los detalles
 interface Detalles {
-    organigrama: string;
+    organigrama:{
+        [nombre_organigrama: string] : DescripcionOrganigrama;
+};
     descripcion_de_puesto: {
         [nombre_descripcion_puesto: string]: DescripcionPuestoDetalle;
 };

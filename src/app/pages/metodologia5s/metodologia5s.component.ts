@@ -14,7 +14,7 @@ import { UpperCasePipe } from '@angular/common';
 })
 export class Metodologia5sComponent {
   titulo_opciones : string = 'Lista de opciones';
-  imagen_5s : string = '../../assets/Images/5s1.png';
+  imagen_5s : string = '../../assets/Images/img_ilustraciones/team.svg';
   titulo:string = 'Metodología de 5s';
   descripcion : string = 'Descubre la metodología 5S: una técnica eficiente para organizar tu espacio de trabajo, mejorar la productividad y reducir el desperdicio. Simplifica, estandariza y maximiza tu eficiencia con solo unos pasos fáciles de implementar.';
 }

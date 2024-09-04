@@ -14,7 +14,7 @@ export class ResultadosEvaluaciones5sService {
       mes_inicio: "Enero",
       mes_final: "Febrero",
       year: "2024",
-      documento: "evaluacion_enero_febrero.pdf"
+      documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 1",
@@ -22,7 +22,7 @@ export class ResultadosEvaluaciones5sService {
         mes_inicio: "Marzo",
         mes_final: "Abril",
         year: "2024",
-        documento: "evaluacion_marzo_abril.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 2",
@@ -30,7 +30,7 @@ export class ResultadosEvaluaciones5sService {
         mes_inicio: "Mayo",
         mes_final: "Junio",
         year: "2024",
-        documento: "evaluacion_mayo_junio.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 2",
@@ -38,7 +38,7 @@ export class ResultadosEvaluaciones5sService {
         mes_inicio: "Julio",
         mes_final: "Agosto",
         year: "2024",
-        documento: "evaluacion_julio_agosto.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 3",
@@ -46,7 +46,7 @@ export class ResultadosEvaluaciones5sService {
         mes_inicio: "Septiembre",
         mes_final: "Octubre",
         year: "2024",
-        documento: "evaluacion_septiembre_octubre.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 3",
@@ -54,7 +54,7 @@ export class ResultadosEvaluaciones5sService {
         mes_inicio: "Noviembre",
         mes_final: "Diciembre",
         year: "2024",
-        documento: "evaluacion_noviembre_diciembre.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     }
   ]
 

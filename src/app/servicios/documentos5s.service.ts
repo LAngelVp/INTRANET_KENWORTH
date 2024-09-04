@@ -13,7 +13,7 @@ export class Documentos5sService {
       mes: "Agosto",
       year: "2024",
       nombre_formato: "Formato de Informe Mensual",
-      documento: "informe_mensual.pdf"
+      documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 1",
@@ -21,7 +21,7 @@ export class Documentos5sService {
         mes: "Agosto",
         year: "2024",
         nombre_formato: "Formato de Acta de Reunión",
-        documento: "acta_reunion.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 2",
@@ -29,7 +29,7 @@ export class Documentos5sService {
         mes: "Julio",
         year: "2024",
         nombre_formato: "Formato de Evaluación de Desempeño",
-        documento: "evaluacion_desempeno.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 2",
@@ -37,7 +37,7 @@ export class Documentos5sService {
         mes: "Julio",
         year: "2024",
         nombre_formato: "Formato de Solicitud de Vacaciones",
-        documento: "solicitud_vacaciones.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 3",
@@ -45,7 +45,7 @@ export class Documentos5sService {
         mes: "Junio",
         year: "2024",
         nombre_formato: "Formato de Plan de Proyecto",
-        documento: "plan_proyecto.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         sucursal: "Sucursal 3",
@@ -53,7 +53,7 @@ export class Documentos5sService {
         mes: "Junio",
         year: "2024",
         nombre_formato: "Formato de Plantillas para Diapositivas",
-        documento: "plantillas_diapositivas.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     }
   ];
   getdocumentos():Observable<FormatosDocumentos5sModel[]>{

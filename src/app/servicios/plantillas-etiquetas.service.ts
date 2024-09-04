@@ -13,7 +13,7 @@ export class PlantillasEtiquetasService {
       descripcion: "Plantilla para la elaboración de informes mensuales de actividades.",
       tipo: "Informe",
       uso: "Reportar actividades del mes",
-      documento: "informe_mensual_template.pdf"
+      documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         nombre: "Formato de Acta de Reunión",
@@ -21,7 +21,7 @@ export class PlantillasEtiquetasService {
         descripcion: "Formato para registrar las actas de reuniones internas.",
         tipo: "Acta",
         uso: "Documentar reuniones y decisiones",
-        documento: "acta_reunion_format.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         nombre: "Plantilla de Evaluación de Desempeño",
@@ -29,7 +29,7 @@ export class PlantillasEtiquetasService {
         descripcion: "Plantilla para la evaluación del desempeño de empleados.",
         tipo: "Evaluación",
         uso: "Evaluar desempeño laboral",
-        documento: "evaluacion_desempeno_template.docx"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         nombre: "Formato de Solicitud de Vacaciones",
@@ -37,7 +37,7 @@ export class PlantillasEtiquetasService {
         descripcion: "Formato para solicitar días de vacaciones.",
         tipo: "Solicitud",
         uso: "Solicitar tiempo libre",
-        documento: "solicitud_vacaciones_format.pdf"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     },
     {
         nombre: "Plantilla de Plan de Proyecto",
@@ -45,7 +45,7 @@ export class PlantillasEtiquetasService {
         descripcion: "Plantilla para planificar proyectos, con secciones para objetivos, cronograma y recursos.",
         tipo: "Planificación",
         uso: "Planificar y gestionar proyectos",
-        documento: "plan_proyecto_template.pptx"
+        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
     }
   ];
 

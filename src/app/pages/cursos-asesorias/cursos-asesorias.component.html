@@ -3,7 +3,7 @@
         <h2 class="subtitulos texto_subtitulo fw-bold m-0">
             Listado de cursos
         </h2>
-        <div *ngFor="let curso of lista_cursos" class="container d-flex flex-column flex-md-row gap-4 border-top border-bottom py-4 border-danger contenedor_video">
+        <div *ngFor="let curso of lista_cursos" class="container d-flex flex-column flex-md-row gap-4 border-top border-bottom py-4 border-danger contenedor_video aparicion_derecha">
             <div class="col">
                 <video class="video" [src]="curso.link_video" (click)="abrirModal(curso)" data-bs-toggle="modal"
                     data-bs-target="#videoModal"></video>
