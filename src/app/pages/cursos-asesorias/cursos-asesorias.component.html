@@ -5,7 +5,7 @@
         </h2>
         <div *ngFor="let curso of lista_cursos" class="container d-flex flex-column flex-md-row gap-4 border-top border-bottom py-4 border-danger contenedor_video aparicion_derecha">
             <div class="col">
-                <video playsinline preload="metadata" class="video" [src]="curso.link_video" (click)="abrirModal(curso)" data-bs-toggle="modal"
+                <video poster="../../../assets/Images/Fondo de pantalla11.jpg" preload="metadata" class="video" [src]="curso.link_video" (click)="abrirModal(curso)" data-bs-toggle="modal"
                     data-bs-target="#videoModal"></video>
             </div>
             <div class="col d-flex flex-column gap-lg-3">
