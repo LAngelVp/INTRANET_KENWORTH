@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-lg color_barra container-fluid position-fixed z-3 p-0" #color_scroll>
     <div class="container py-2">
         <div class="tamaño_logo">
-            <a [routerLink]="ruta_home" class="navbar-brand">
+            <a [routerLink]="ruta_home" class="navbar-brand" (click)="clic_opcion($event)">
                 <img [src]="logotipo" alt="" class="img-fluid">
             </a>
         </div>
