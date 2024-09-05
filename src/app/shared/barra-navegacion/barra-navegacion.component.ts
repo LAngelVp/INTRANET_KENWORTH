@@ -36,7 +36,7 @@ export class BarraNavegacionComponent {
   ]
 
   @ViewChild('color_scroll') div!: ElementRef;
-
+  
   @HostListener('window:scroll', ['$event'])
   scroll_window(){
     if (window.scrollY > 50) { // Ajusta el valor según tus necesidades
@@ -45,11 +45,12 @@ export class BarraNavegacionComponent {
       this.div.nativeElement.classList.remove('color_barra_scroll');
     }
   }
-
-
-
-  menu_abierto = false;
-  mostrar_menu(){
-    this.menu_abierto = !this.menu_abierto;
+  
+  @ViewChild('barra_navegacion') burger!: ElementRef;
+  @HostListener('document: click', ['$event'])
+  clic_opcion(event : Event){
+    if (this.burger.nativeElement.classList.contains('show')){
+      this.burger.nativeElement.classList.remove('show');
+    }
   }
 }

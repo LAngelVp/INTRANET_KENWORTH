@@ -9,10 +9,10 @@
             <span class="bi bi-justify-right fs-3">
             </span>
         </button>
-        <nav class="collapse navbar-collapse justify-content-end mt-4 mt-lg-0" id="navbarText">
-            <ul class="navbar-nav opciones_navbar mt-0 gap-lg-4" [ngClass]="{'show': menu_abierto}">
+        <nav class="collapse navbar-collapse justify-content-end mt-4 mt-lg-0" id="navbarText" #barra_navegacion> 
+            <ul class="navbar-nav opciones_navbar mt-0 gap-lg-4" >
                 <li *ngFor="let item of lista_opciones" class="nav-link texto_barra_navegacion p-0">
-                    <a [routerLink]="item.ruta" class="nav-link fw-bold texto_slogans text-center">
+                    <a [routerLink]="item.ruta" class="nav-link fw-bold texto_slogans text-center" (click)="clic_opcion($event)">
                         {{item.nombre}}
                     </a>
                 </li>
