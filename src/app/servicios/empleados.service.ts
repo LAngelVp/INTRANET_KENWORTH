@@ -9,7 +9,7 @@ export class EmpleadosService {
 
   lista_empleados: EmpleadosModel[] = [
     {
-      id: "1",
+      N_Empleado: "1",
       nombre: "Juan Pérez",
       departamento: "Recursos Humanos",
       puesto: "Contratación",
@@ -18,7 +18,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "2",
+      N_Empleado: "2",
       nombre: "María García",
       departamento: "Tecnología",
       puesto: "Desarrollo",
@@ -27,7 +27,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "3",
+      N_Empleado: "3",
       nombre: "Carlos Ramírez",
       departamento: "Finanzas",
       puesto: "Contabilidad",
@@ -36,7 +36,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "4",
+      N_Empleado: "4",
       nombre: "Luisa Fernández",
       departamento: "Marketing",
       puesto: "Publicidad",
@@ -45,7 +45,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "5",
+      N_Empleado: "5",
       nombre: "Ana Martínez",
       departamento: "Ventas",
       puesto: "Relaciones Comerciales",
@@ -54,7 +54,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "6",
+      N_Empleado: "6",
       nombre: "Pedro Gómez",
       departamento: "Operaciones",
       puesto: "Logística",
@@ -63,7 +63,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "7",
+      N_Empleado: "7",
       nombre: "Laura Sánchez",
       departamento: "Recursos Humanos",
       puesto: "Capacitación",
@@ -72,7 +72,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "8",
+      N_Empleado: "8",
       nombre: "Roberto Torres",
       departamento: "Tecnología",
       puesto: "Soporte Técnico",
@@ -81,7 +81,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "9",
+      N_Empleado: "9",
       nombre: "Elena Morales",
       departamento: "Finanzas",
       puesto: "Auditoría",
@@ -90,7 +90,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "10",
+      N_Empleado: "10",
       nombre: "Miguel Díaz",
       departamento: "Marketing",
       puesto: "Investigación de Mercado",
@@ -99,7 +99,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "11",
+      N_Empleado: "11",
       nombre: "Carmen López",
       departamento: "Ventas",
       puesto: "Atención al Cliente",
@@ -108,7 +108,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "12",
+      N_Empleado: "12",
       nombre: "Andrés Pérez",
       departamento: "Operaciones",
       puesto: "Control de Calidad",
@@ -117,7 +117,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "13",
+      N_Empleado: "13",
       nombre: "Patricia Romero",
       departamento: "Recursos Humanos",
       puesto: "Desarrollo Organizacional",
@@ -126,7 +126,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "14",
+      N_Empleado: "14",
       nombre: "Sergio Vázquez",
       departamento: "Tecnología",
       puesto: "Administración de Bases de Datos",
@@ -135,7 +135,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "15",
+      N_Empleado: "15",
       nombre: "Verónica Ruiz",
       departamento: "Finanzas",
       puesto: "Tesorería",
@@ -144,7 +144,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "16",
+      N_Empleado: "16",
       nombre: "Raúl Navarro",
       departamento: "Marketing",
       puesto: "Comunicación Corporativa",
@@ -153,7 +153,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "17",
+      N_Empleado: "17",
       nombre: "Gloria Jiménez",
       departamento: "Ventas",
       puesto: "Gerente de Cuentas",
@@ -162,7 +162,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "18",
+      N_Empleado: "18",
       nombre: "Emilio Castro",
       departamento: "Operaciones",
       puesto: "Planificación",
@@ -171,7 +171,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "19",
+      N_Empleado: "19",
       nombre: "Claudia Herrera",
       departamento: "Recursos Humanos",
       puesto: "Relaciones Laborales",
@@ -180,7 +180,7 @@ export class EmpleadosService {
       foto: 'https://www.svgrepo.com/show/499764/user.svg'
     },
     {
-      id: "20",
+      N_Empleado: "20",
       nombre: "Jorge Ortiz",
       departamento: "Tecnología",
       puesto: "Seguridad Informática",

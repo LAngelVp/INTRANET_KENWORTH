@@ -32,8 +32,6 @@
                             <tr>
                                 <th scope="col">Sucursal</th>
                                 <th scope="col">Departamento</th>
-                                <th scope="col">Mes</th>
-                                <th scope="col">Año</th>
                                 <th scope="col">Formato</th>
                                 <th scope="col">Documento</th>
                             </tr>
@@ -42,8 +40,6 @@
                             <tr *ngFor="let doc of documentos">
                                 <td>{{ doc.sucursal }}</td>
                                 <td>{{ doc.departamento }}</td>
-                                <td>{{ doc.mes }}</td>
-                                <td>{{ doc.year }}</td>
                                 <td>{{ doc.nombre_formato }}</td>
                                 <!-- <td><a [href]="doc.documento" target="_blank">{{ doc.documento }}</a></td> -->
                                 <td class="text-center"><a [href]="doc.documento" target="_blank" class="btn btn-outline-danger">Mostrar</a></td>
@@ -82,6 +78,7 @@
                             <tr>
                                 <th scope="col">Sucursal</th>
                                 <th scope="col">Departamento</th>
+                                <th scope="col">Padrino</th>
                                 <th scope="col">Inicial</th>
                                 <th scope="col">Fin</th>
                                 <th scope="col">Año</th>
@@ -92,6 +89,7 @@
                             <tr *ngFor="let doc of resultados_evaluaciones5s">
                                 <td>{{ doc.sucursal }}</td>
                                 <td>{{ doc.departamento }}</td>
+                                <td>{{ doc.padrino5s }}</td>
                                 <td>{{ doc.mes_inicio }}</td>
                                 <td>{{ doc.mes_final }}</td>
                                 <td>{{ doc.year }}</td>

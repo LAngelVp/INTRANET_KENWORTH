@@ -21,17 +21,12 @@
                             {{item.nombre}}
                         </h5>
                     </div>
-                    <!-- <p class="slogans texto_slogans fw-bold">
-                        {{item.descripcion}}
-                    </p> -->
+                    <div *ngIf="item.descripcion">
+                        <p class="slogans texto_slogans fw-bold fondo-descripcion">
+                            {{item.descripcion}}
+                        </p>
+                    </div>
                 </div>
-                <!-- <div class="d-flex justify-content-center justify-content-md-end w-75">
-                    <a href="" >
-                        <button class="btn btn-primary fs-6 fw-bold">
-                            ¡Haz clic!
-                        </button>
-                    </a>
-                </div> -->
             </div>
         </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

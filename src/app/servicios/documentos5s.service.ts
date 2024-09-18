@@ -8,53 +8,53 @@ import { Observable, of } from 'rxjs';
 export class Documentos5sService {
   documentos_5s : FormatosDocumentos5sModel[] = [
     {
-      sucursal: "Sucursal 1",
-      departamento: "Departamento A",
-      mes: "Agosto",
-      year: "2024",
-      nombre_formato: "Formato de Informe Mensual",
-      documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
+      sucursal: "Matriz",
+      departamento: "Refacciones",
+      nombre_formato: "Evaluaciones 5s",
+      documento: "../../assets/documents/Matriz.G1.1Evaluación5s.xlsx"
     },
     {
-        sucursal: "Sucursal 1",
-        departamento: "Departamento B",
-        mes: "Agosto",
-        year: "2024",
-        nombre_formato: "Formato de Acta de Reunión",
-        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
+      sucursal: "Matriz",
+      departamento: "Refacciones",
+      nombre_formato: "Calendario de tareas",
+      documento: "../../assets/documents/Matriz.G1.2CalendarioDeTareas.xlsx"
     },
     {
-        sucursal: "Sucursal 2",
-        departamento: "Departamento C",
-        mes: "Julio",
-        year: "2024",
-        nombre_formato: "Formato de Evaluación de Desempeño",
-        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
+      sucursal: "Matriz",
+      departamento: "Refacciones",
+      nombre_formato: "Lista de necesarios",
+      documento: "../../assets/documents/Matriz.G1.3ListadeNecesarios.xlsx"
     },
     {
-        sucursal: "Sucursal 2",
-        departamento: "Departamento D",
-        mes: "Julio",
-        year: "2024",
-        nombre_formato: "Formato de Solicitud de Vacaciones",
-        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
+      sucursal: "Matriz",
+      departamento: "Refacciones",
+      nombre_formato: "Evaluaciones de infraestructura",
+      documento: "../../assets/documents/Matriz.G1.4EvaluaciónDeInfraestructura.xlsx"
     },
     {
-        sucursal: "Sucursal 3",
-        departamento: "Departamento E",
-        mes: "Junio",
-        year: "2024",
-        nombre_formato: "Formato de Plan de Proyecto",
-        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
+      sucursal: "Veracruz",
+      departamento: "Almacén",
+      nombre_formato: "Evaluaciones 5s",
+      documento: "../../assets/documents/Veracruz.G1.1Evaluación5s.xlsx"
     },
     {
-        sucursal: "Sucursal 3",
-        departamento: "Departamento F",
-        mes: "Junio",
-        year: "2024",
-        nombre_formato: "Formato de Plantillas para Diapositivas",
-        documento: "https://drive.google.com/file/d/1p_t5cYmyEYhv0l1Hk2PPeyZP_ddmLKGB/view?usp=sharing"
-    }
+      sucursal: "Veracruz",
+      departamento: "Almacén",
+      nombre_formato: "Calendario de tareas",
+      documento: "../../assets/documents/Veracruz.G1.2CalendarioDeTareas.xlsx"
+    },
+    {
+      sucursal: "Veracruz",
+      departamento: "Almacén",
+      nombre_formato: "Lista de necesarios",
+      documento: "../../assets/documents/Veracruz.G1.3ListadeNecesarios.xlsx"
+    },
+    {
+      sucursal: "Veracruz",
+      departamento: "Almacén",
+      nombre_formato: "Evaluaciones de infraestructura",
+      documento: "../../assets/documents/Veracruz.G1.4EvaluaciónDeInfraestructura.xlsx"
+    },
   ];
   getdocumentos():Observable<FormatosDocumentos5sModel[]>{
     return of(this.documentos_5s);
